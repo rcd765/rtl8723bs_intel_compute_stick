@@ -12,7 +12,7 @@ Steps to reproduce:
 
 2) On another machine Download the 4.3 kernel from kernel.org and copy it on a USB stick - to insert in ICS.
 
-3) Copy the kernel source tree to /usr/src/ on the root file system on the stick.
+3) Copy the kernel source tree to /usr/src/ on the root file system on the ICS.
 
 4) Change directory to /usr/src/linux-4.3 and apply the kernel patches from https://github.com/hadess/rtl8723bs (patches folder) in the following order (using patch -p1 < filename.patch) :
 
@@ -30,7 +30,7 @@ Steps to reproduce:
 
 8) reboot with the new kernel (still no wifi).
 
-9) Copy or clone the driver source to /usr/src/ on your stick.  In the rtl8723bs_intel_compute_stick directory do "sudo make all" and "sudo make install" to build and install the module.
+9) Clone the driver source and copy to /usr/src/ on your ICS using usb or sd card.  In the rtl8723bs_intel_compute_stick directory do "sudo make all" and "sudo make install" to build and install the module.
 
 10) reboot and you should have wifi and BT enabled.
 
